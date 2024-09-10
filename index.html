@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Snacks Corner</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Snacks Corner</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#snacks">Snacks</a></li>
+                    <li><a href="#videos">Videos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <h2>Welcome to Snacks Corner!</h2>
+                <p>Discover the best snacks and treats for every occasion.</p>
+                <button class="scroll-btn" onclick="scrollToSection('snacks')">Explore Snacks</button>
+            </section>
+
+            <section id="snacks">
+                <h2>Our Snacks</h2>
+                <div class="pagination">
+                    <button class="pagination-btn" onclick="changePage(-1)">Previous</button>
+                    <button class="pagination-btn" onclick="changePage(1)">Next</button>
+                </div>
+                <div class="snack-list">
+                    <!-- Snack items will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <section id="videos">
+                <h2>Snack Videos</h2>
+                <video controls>
+                    <source src="snack-video.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <audio controls>
+                    <source src="./assets/contact-message.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Snacks Corner. All rights reserved.</p>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
+</html>
